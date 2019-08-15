@@ -1,0 +1,65 @@
+<!DOCTYPE>
+<html>
+
+<head>
+  <title>Hello World</title>
+  <link rel="stylesheet" type="text/css" href="index.css"/>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+  <script src="jquery-3.2.1.min.js"></script>
+  <script src="anime.min.js"></script>
+</head>
+
+<body onload="start()">
+  <div class="container gone">
+    <div class="login">
+      <div class="logininfo">
+        <h1 class="title">Scissors, Paper, Stone!</h1>
+        <div class="line"></div>
+        <p class="subtitle">Create Room</p>
+
+        <div class="input-container">
+          <input placeholder="username"/>
+          <div class="button"><p>CREATE</p></div>
+        </div>
+
+        <p class="subtitle">Join Room</p>
+        <input placeholder="username" class="fullinput"/>
+
+        <div class="input-container">
+          <input placeholder="room code" />
+          <div class="button"><p>JOIN</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="game-container">
+    <div class="game-score">
+      <div class="score center">
+        <p id="player1name">kungpaockn</p>
+        <h1>0</h1>
+      </div>
+
+      <div class="roomname center">
+        <p>roomname</p>
+        <h1 id="roomname">BOAR</h1>
+      </div>
+
+      <div class="score center">
+        <p id="player2name">dragonslayer</p>
+        <h1>0</h1>
+      </div>
+    </div>
+
+    <div class="game-screen"></div>
+    <div class="game-controls">
+      <span style="font-size: 5em;" class="hover"><i class="far fa-hand-peace"></i></span>
+      <span style="font-size: 5em;" class="hover"><i class="far fa-hand-paper"></i></span>
+      <span style="font-size: 5em;" class="hover"><i class="far fa-hand-rock"></i></span>
+    </div>
+  </div>
+  <script src="app.js"> </script>
+</body>
+
+</html>
