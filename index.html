@@ -19,16 +19,16 @@
         <p class="subtitle">Create Room</p>
 
         <div class="input-container">
-          <input placeholder="username"/>
-          <div class="button"><p>CREATE</p></div>
+          <input placeholder="username" id='username-c'/>
+          <div class="button" id='createbutton'><p>CREATE</p></div>
         </div>
 
         <p class="subtitle">Join Room</p>
-        <input placeholder="username" class="fullinput"/>
+        <input placeholder="username" class="fullinput" id='username-j'/>
 
         <div class="input-container">
-          <input placeholder="room code" />
-          <div class="button"><p>JOIN</p></div>
+          <input placeholder="room code" id='roomcode-j' />
+          <div class="button" id='joinbutton'><p>JOIN</p></div>
         </div>
       </div>
     </div>
@@ -59,6 +59,7 @@
       <span style="font-size: 5em;" class="hover"><i class="far fa-hand-rock"></i></span>
     </div>
   </div>
+  <script src="http://134.209.0.25:80/socket.io/socket.io.js"></script>
   <script src="app.js"> </script>
 </body>
 
